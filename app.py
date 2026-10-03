@@ -437,6 +437,9 @@ st.dataframe(
     hide_index=True, width="stretch", height=560,
     column_config={
         "symbol": st.column_config.TextColumn("Symbol"),
+        "name": st.column_config.TextColumn("Name"),
+        "sector": st.column_config.TextColumn("Sector"),
+        "verdict": st.column_config.TextColumn("Verdict"),
         "price": st.column_config.NumberColumn("Price ₹", format="%.1f"),
         "mcap_cr": st.column_config.NumberColumn("Mcap ₹cr", format="%.0f"),
         "analysts": st.column_config.NumberColumn("Analysts", format="%d"),
